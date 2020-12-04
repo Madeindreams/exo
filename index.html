@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = .1">
+<meta name="description" content="Site web de Ian Dorion">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/mid.css">
+<link rel="stylesheet" href="/scroller/jquery.mCustomScrollbar.css" />
+<title>Made In Dreams</title>
+<style>
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+</style>
+</head>
+
+<body data-ng-app="mid">
+<div class="container">
+
+<nav data-ng-controller="pageCtrl">
+	<div class="nav-title">MadeInDreams.ca</div>
+
+<div  data-ng-repeat="page in pages" class="nav-item" >
+{{page.name}}
+
+</div>
+
+</nav>
+
+<main class="main">
+<div class="main_logo">
+	<div class="corner"><div class="corner_filler"></div></div>
+
+<div class="avatar"></div>
+
+
+
+</div>	
+<div class="main-box">
+<div class="main-box-wrapper">
+<ng-view></ng-view>
+</div>
+</div>
+
+<div class="sub-menu">
+<div class="bottom-corner"><div class="bottom-corner-filler"></div></div>
+
+
+</div>
+</main>
+
+<footer data-ng-controller="footCtrl">
+<div class="row">
+<div data-ng-repeat="icon in icons" class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+<img  data-ng-src="images/{{icon.file}}" alt="{{icon.name}}" title="{{icon.titre}}" width="64" height="64" src="empty.png">
+</div>
+<span class="foot-copyr">&copy;MadeInDreams</span>
+</div>
+</footer>
+
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.min.js"></script>
+<script src="scroller/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/mid_app.js"></script>
+
+<script src="js/visCtrl.js"></script>
+<script src="js/momentCtrl.js"></script>
+
+
+<script>
+    (function($){
+        $(window).load(function(){
+            $(".main-box-wrapper").mCustomScrollbar({
+            	 theme:"rounded-dots-dark"
+            });
+        });
+    })(jQuery);
+</script>
+
+</body>
+</html>

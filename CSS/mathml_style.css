@@ -1,0 +1,40 @@
+h3 {
+
+text-decoration: underline;	
+}
+
+p {
+	font-family: arial;
+	font-size: 16px;
+}
+
+mtext {
+font-family: arial;
+}
+
+#tableHead{
+	font-weight: 900;
+}
+#momentImg{
+	
+	border:1px solid #000000;
+}
+
+#graph{
+	height:600px;
+}
+
+table{
+	border:1px solid #000000;
+	text-align: center;
+}
+tr{
+	border:1px solid #000000;
+}
+th{
+	border:1px solid #000000;
+	text-align: center;
+}
+td{
+	border:1px solid #000000;
+}

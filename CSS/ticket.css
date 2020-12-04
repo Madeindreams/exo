@@ -1,0 +1,180 @@
+body
+{
+  margin:0px;
+    overflow-y:scroll;
+}
+
+
+.ticket-border{
+	position:relative;
+	width:800px;
+	height:200px;
+   page-break-inside: avoid;
+   margin:10px;
+}
+
+ .tikNo{
+
+ 	transform-origin: left top 0;
+ 	position:absolute;
+ 	left:50px;
+ 	height:50px;
+       width:200px;
+       text-align:center;
+    word-wrap: break-word;
+    font-family: monospace; /* this is just for good looks */
+    white-space: pre;/* this is for displaying whitespaces */
+    transform: rotate(90deg);
+    background-color: #4eb610 !important;
+   font-weight: 900;
+   font-size: 25px;
+line-height: 60px;
+color:#fff !important;
+-webkit-print-color-adjust: exact !important;
+margin:0px;
+
+    }
+
+    .tikNoR{
+ 	transform-origin: right top 0;
+ 	position:absolute;
+ 	right:50px;
+ 	height:50px;
+       width:200px;
+       text-align:center;
+    word-wrap: break-word;
+    font-family: monospace; /* this is just for good looks */
+    white-space: pre;/* this is for displaying whitespaces */
+    transform: rotate(270deg);
+    background-color: #4eb610 !important;
+     font-weight: 900;
+   font-size: 25px;
+line-height: 60px;
+color:#fff !important;
+-webkit-print-color-adjust: exact !important;
+
+    }
+
+.tikNoDot{
+  position:absolute;
+  top:85px;
+  left:35px;
+  border-radius:15px;
+  height:30px;
+  width:30px;
+  background-color:#fff !important;
+-webkit-print-color-adjust: exact !important;
+   z-index: 1;
+}
+.tikNoDotR{
+  position:absolute;
+  top:85px;
+  right:35px;
+  border-radius:15px;
+  height:30px;
+  width:30px;
+  background-color:#fff !important;
+-webkit-print-color-adjust: exact !important;
+  z-index: 1;
+}
+
+.ticketLeftSide{
+  position:absolute;
+  top:0px;
+  left:55px;
+  width:540px;
+  height:198px;
+  border-right:2px dashed #4eb610;
+   z-index: 2;
+
+}
+
+.ticketRightSide{
+    transform-origin: right top 0;
+  position:absolute;
+ top:10px;
+right:0px;
+  width:180px;
+  height:160px;
+left:400px;
+   z-index: 2;
+line-height: 25px;
+  text-align:left;
+    word-wrap: break-word;
+    font-family: monospace; /* this is just for good looks */
+    font-size:10px;
+    white-space: pre;/* this is for displaying whitespaces */
+    transform: rotate(270deg);
+      
+}
+
+
+
+.price{
+ float:right;
+  border :2px solid #4eb610;
+  border-radius:15px;
+  height:75px;
+  width:75px;
+  margin:10px;
+  text-align:center;
+  line-height: 75px;
+  font-weight: 900;
+  font-size: 35px;
+   font-family: monospace;
+   clear:both;
+
+}
+
+.logo{
+
+  float:right;
+  
+  border-radius:15px;
+  height:75px;
+  width:75px;
+  margin:10px;
+  text-align:center;
+  line-height: 75px;
+  font-weight: 900;
+  font-size: 35px;
+   font-family: monospace;
+   clear:both;
+}
+
+.headline{
+  position:absolute;
+  top:5px;
+  left:5px;
+
+width:445px;
+height:190px;
+text-align: center;
+font-weight:900;
+font-size: 25px;
+}
+
+.datetirage{
+  text-align: center;
+    border-top :2px solid #4eb610;
+     border-bottom :2px solid #4eb610;
+    font-weight:100;
+font-size: 15px;
+}
+
+.disclaimer{
+  text-align: center;
+ 
+    font-weight:100;
+font-size: 13px;
+}
+.logoImg{
+  height: 60px; 
+}
+
+
+.webprint{
+
+  font-size:20px;
+  font-weight:400;
+}
