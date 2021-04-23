@@ -1,2 +1,2 @@
 # exo
-Another App Template
+An exotic Template for your website
